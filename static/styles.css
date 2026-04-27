@@ -1,0 +1,115 @@
+/* Estilos principais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    margin-left: 10px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries - Para telas pequenas */
+
+@media screen and (max-width: 768px) {
+    /* Sidebar em telas pequenas */
+    .sidebar {
+        width: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: -250px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    /* Menu de navegação no header */
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Adiciona botão para abrir o menu lateral */
+    .sidebar-toggle {
+        display: block;
+        background-color: #444;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+/* Responsivo para dispositivos móveis (telas muito pequenas) */
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,58 @@
+body.bg-gradient {
+  background: linear-gradient(135deg, #578fc0, #509497);
+  transition: background 0.3s ease;
+}
+
+/* ===== Cartão ===== */
+.card {
+  border-radius: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+/* ===== Botão ===== */
+.btn-primary {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== Responsividade extra ===== */
+@media (max-width: 576px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-footer {
+  font-size: 0.95rem;
+}
+
+.auth-footer a {
+  color: #007bff;
+  transition: color 0.2s ease;
+}
+
+.auth-footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
