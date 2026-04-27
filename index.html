@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Auto Elétrica Marília - Manutenção elétrica automotiva em Mariluz, PR. Cuide do seu carro, proteja sua família e economize com manutenção preventiva." />
+  <title>Auto Elétrica Marília | Manutenção Elétrica Automotiva</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Landpage CSS -->
+  <link rel="stylesheet" href="../static/css/landpage.css" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span><i class="fas fa-map-marker-alt"></i> Av. Marília, 969 - Mariluz, PR</span>
+        <span><i class="fas fa-clock"></i> Seg–Sex: 08h–18h | Sáb: 08h–12h</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+554499244787"><i class="fas fa-phone"></i> (44) 9924-4787</a>
+        <a href="https://wa.me/554499244787" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <div class="logo-text">
+          <strong>Auto Elétrica Marília</strong>
+          <span>Especialistas em Elétrica Automotiva</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#preventiva">Preventiva</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="tel:+554499244787" class="btn btn-primary" style="padding:10px 22px;font-size:.85rem;">(44) 9924-4787</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-shield-alt"></i> Segurança &amp; Economia</div>
+        <h1>Sua família merece um carro <span>100% seguro</span></h1>
+        <p>Especialistas em manutenção elétrica automotiva em Mariluz, PR. Previna falhas, proteja quem você ama e economize com a manutenção preventiva.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/554499244787?text=Olá!%20Gostaria%20de%20agendar%20uma%20revisão%20elétrica." target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> &nbsp;Agendar pelo WhatsApp</a>
+          <a href="#servicos" class="btn btn-outline">Ver Serviços</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="hero-card-text">
+            <strong>Segurança para sua família</strong>
+            <span>Evite panes e acidentes causados por falhas elétricas</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-piggy-bank"></i></div>
+          <div class="hero-card-text">
+            <strong>Economia real</strong>
+            <span>Manutenção preventiva custa até 5× menos que corretiva</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-tools"></i></div>
+          <div class="hero-card-text">
+            <strong>Diagnóstico preciso</strong>
+            <span>Equipamentos modernos para identificar qualquer falha</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-certificate"></i></div>
+          <div class="hero-card-text">
+            <strong>Profissionais qualificados</strong>
+            <span>Anos de experiência em elétrica automotiva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-item">
+        <div class="stat-number">+15</div>
+        <div class="stat-label">Anos de Experiência</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">+3k</div>
+        <div class="stat-label">Clientes Atendidos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Satisfação dos Clientes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5×</div>
+        <div class="stat-label">Mais Barato Prevenir</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-visual">
+        <div class="about-img-box">
+          <i class="fas fa-car-battery"></i>
+          <p>Diagnóstico elétrico completo com tecnologia de ponta</p>
+        </div>
+        <div class="about-badge">
+          <strong>+15</strong>
+          <span>anos de<br>experiência</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Quem Somos</span>
+        <h2 class="section-title">Auto Elétrica Marília — referência em Mariluz, PR</h2>
+        <p class="section-sub">Localizada na Av. Marília, 969, somos especialistas em sistemas elétricos automotivos. Nosso compromisso é garantir que seu veículo funcione com segurança e eficiência, protegendo você e sua família nas estradas.</p>
+        <ul class="about-list">
+          <li><i class="fas fa-check-circle"></i> Equipe técnica especializada e constantemente atualizada</li>
+          <li><i class="fas fa-check-circle"></i> Equipamentos de diagnóstico eletrônico de última geração</li>
+          <li><i class="fas fa-check-circle"></i> Atendimento transparente com orçamento sem surpresas</li>
+          <li><i class="fas fa-check-circle"></i> Peças de qualidade com garantia de procedência</li>
+          <li><i class="fas fa-check-circle"></i> Foco em manutenção preventiva para sua segurança</li>
+        </ul>
+        <a href="tel:+554499244787" class="btn btn-primary"><i class="fas fa-phone"></i> &nbsp;Ligar Agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-tag">Nossos Serviços</span>
+        <h2 class="section-title">Tudo que seu carro precisa em elétrica</h2>
+        <p class="section-sub">Oferecemos serviços completos de manutenção elétrica automotiva para manter seu veículo sempre seguro e funcionando perfeitamente.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-car-battery"></i></div>
+          <h3>Bateria &amp; Alternador</h3>
+          <p>Teste, manutenção e substituição de baterias e alternadores. Evite panes inesperadas e fique na mão no meio da estrada.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <h3>Diagnóstico Eletrônico</h3>
+          <p>Leitura de falhas com scanner automotivo avançado. Identificamos problemas antes que se tornem caros ou perigosos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Sistema de Iluminação</h3>
+          <p>Revisão e reparo de faróis, lanternas, setas e iluminação interna. Visibilidade é segurança para você e sua família.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-key"></i></div>
+          <h3>Sistema de Partida</h3>
+          <p>Motor de arranque, relés e fiação do sistema de partida. Seu carro ligando sempre que você precisar.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-wind"></i></div>
+          <h3>Ar-Condicionado Elétrico</h3>
+          <p>Verificação e reparo do sistema elétrico do ar-condicionado. Conforto e segurança em qualquer temperatura.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Fiação &amp; Chicotes</h3>
+          <p>Revisão completa da fiação elétrica do veículo. Curtos e fios danificados são riscos sérios de incêndio.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3>Painel &amp; Sensores</h3>
+          <p>Reparo de instrumentos do painel e sensores eletrônicos. Informações corretas para decisões seguras.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-lock"></i></div>
+          <h3>Travas &amp; Vidros Elétricos</h3>
+          <p>Manutenção de travas elétricas, vidros e retrovisores. Conforto e segurança no dia a dia.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-plug"></i></div>
+          <h3>Instalação de Acessórios</h3>
+          <p>Instalação profissional de som, alarme, câmera de ré e outros acessórios elétricos com segurança.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREVENTIVE ===== -->
+  <section class="preventive" id="preventiva">
+    <div class="container">
+      <div class="preventive-content">
+        <span class="section-tag">Manutenção Preventiva</span>
+        <h2 class="section-title">Prevenir é sempre mais inteligente — e mais barato</h2>
+        <p class="section-sub">A manutenção preventiva elétrica é o investimento mais seguro que você pode fazer pelo seu carro e pela sua família.</p>
+        <ul class="benefit-list">
+          <li class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="benefit-text">
+              <strong>Segurança em primeiro lugar</strong>
+              <span>Falhas elétricas causam acidentes, incêndios e panes. A revisão preventiva elimina esses riscos antes que aconteçam.</span>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-piggy-bank"></i></div>
+            <div class="benefit-text">
+              <strong>Economia comprovada</strong>
+              <span>Reparos preventivos custam em média 5 vezes menos do que reparos corretivos após uma falha grave.</span>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-heart"></i></div>
+            <div class="benefit-text">
+              <strong>Tranquilidade para a família</strong>
+              <span>Saber que o carro está revisado traz paz de espírito para você e para quem você ama nas estradas.</span>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="benefit-text">
+              <strong>Valorização do veículo</strong>
+              <span>Um carro com manutenção em dia vale mais na hora da venda e tem vida útil muito maior.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="preventive-cards">
+        <div class="prev-card">
+          <div class="prev-card-header">
+            <i class="fas fa-calendar-check"></i>
+            <strong>Revisão Semestral Recomendada</strong>
+          </div>
+          <p>Realize a revisão elétrica completa a cada 6 meses ou 10.000 km. Pequenos problemas detectados cedo evitam grandes prejuízos.</p>
+        </div>
+        <div class="prev-card">
+          <div class="prev-card-header">
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>Sinais de Alerta</strong>
+          </div>
+          <p>Luz do painel acesa, dificuldade para ligar, faróis fracos ou piscando, cheiro de queimado — não ignore! Agende uma revisão imediatamente.</p>
+        </div>
+        <div class="prev-card">
+          <div class="prev-card-header">
+            <i class="fas fa-family"></i>
+            <strong>Proteja quem você ama</strong>
+          </div>
+          <p>Falhas elétricas são responsáveis por grande parte dos incêndios veiculares. A manutenção preventiva é o escudo da sua família.</p>
+        </div>
+        <div class="prev-card">
+          <div class="prev-card-header">
+            <i class="fas fa-dollar-sign"></i>
+            <strong>Calcule sua economia</strong>
+          </div>
+          <p>Uma revisão preventiva completa custa uma fração do que você gastaria com um reboque, peças danificadas em cascata e dias sem carro.</p>
+        </div>
+        <a href="https://wa.me/554499244787?text=Olá!%20Quero%20agendar%20uma%20revisão%20elétrica%20preventiva." target="_blank" class="btn btn-primary" style="align-self:flex-start;margin-top:8px;"><i class="fab fa-whatsapp"></i> &nbsp;Agendar Revisão Preventiva</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why">
+    <div class="container">
+      <div class="why-header">
+        <span class="section-tag">Por que nos escolher?</span>
+        <h2 class="section-title">Diferenciais que fazem a diferença</h2>
+        <p class="section-sub">Mais do que consertar carros, cuidamos da segurança e do bolso dos nossos clientes.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <i class="fas fa-user-tie"></i>
+          <h4>Técnicos Especializados</h4>
+          <p>Profissionais com formação e experiência exclusiva em sistemas elétricos automotivos.</p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-microscope"></i>
+          <h4>Diagnóstico Preciso</h4>
+          <p>Equipamentos modernos que identificam falhas invisíveis a olho nu antes que causem danos.</p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-hand-holding-usd"></i>
+          <h4>Preço Justo</h4>
+          <p>Orçamento transparente, sem surpresas. Você aprova antes de qualquer serviço ser realizado.</p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-award"></i>
+          <h4>Garantia nos Serviços</h4>
+          <p>Todos os serviços realizados possuem garantia. Sua satisfação e segurança são nossa prioridade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-text">
+        <h2>Não espere a falha acontecer!</h2>
+        <p>Agende agora sua revisão elétrica preventiva e proteja sua família.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/554499244787?text=Olá!%20Gostaria%20de%20agendar%20uma%20revisão%20elétrica%20preventiva." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> &nbsp;WhatsApp</a>
+        <a href="tel:+554499244787" class="btn btn-dark"><i class="fas fa-phone"></i> &nbsp;(44) 9924-4787</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-header">
+        <span class="section-tag">Fale Conosco</span>
+        <h2 class="section-title">Entre em contato</h2>
+        <p class="section-sub">Estamos prontos para atender você. Agende sua revisão ou tire suas dúvidas.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <strong>Endereço</strong>
+              <span>Av. Marília, 969 - Mariluz, PR</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text">
+              <strong>Telefone</strong>
+              <span><a href="tel:+554499244787">(44) 9924-4787</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-item-text">
+              <strong>WhatsApp</strong>
+              <span><a href="https://wa.me/554499244787" target="_blank">(44) 9924-4787</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-item-text">
+              <strong>Horário de Atendimento</strong>
+              <span>Segunda a Sexta: 08h às 18h<br>Sábado: 08h às 12h</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Solicite um Orçamento</h3>
+          <form onsubmit="handleForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" placeholder="(44) 99999-9999" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="veiculo">Veículo (marca/modelo/ano)</label>
+              <input type="text" id="veiculo" placeholder="Ex: Fiat Uno 2018" />
+            </div>
+            <div class="form-group">
+              <label for="servico">Serviço desejado</label>
+              <select id="servico">
+                <option value="">Selecione um serviço</option>
+                <option>Revisão Elétrica Preventiva</option>
+                <option>Diagnóstico Eletrônico</option>
+                <option>Bateria / Alternador</option>
+                <option>Sistema de Iluminação</option>
+                <option>Sistema de Partida</option>
+                <option>Ar-Condicionado Elétrico</option>
+                <option>Fiação / Chicotes</option>
+                <option>Painel / Sensores</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Descreva o problema ou dúvida</label>
+              <textarea id="mensagem" placeholder="Conte-nos mais sobre o que está acontecendo com seu veículo..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fab fa-whatsapp"></i> &nbsp;Enviar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.0!2d-53.15!3d-23.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20Mar%C3%ADlia%2C%20969%20-%20Mariluz%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Auto Elétrica Marília">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <div class="logo-text">
+              <strong>Auto Elétrica Marília</strong>
+              <span style="color:rgba(255,255,255,.5)">Especialistas em Elétrica Automotiva</span>
+            </div>
+          </div>
+          <p>Há mais de 15 anos cuidando da segurança elétrica dos veículos em Mariluz e região. Nosso compromisso é com a sua segurança e a da sua família.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/554499244787" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Revisão Preventiva</a></li>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Diagnóstico Eletrônico</a></li>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Bateria &amp; Alternador</a></li>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Sistema de Iluminação</a></li>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Fiação &amp; Chicotes</a></li>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Instalação de Acessórios</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="tel:+554499244787"><i class="fas fa-phone"></i> (44) 9924-4787</a></li>
+            <li><a href="https://wa.me/554499244787" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Av. Marília, 969</a></li>
+            <li><a href="#"><i class="fas fa-city"></i> Mariluz, PR</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Seg–Sex: 08h–18h</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Sáb: 08h–12h</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 <span>Auto Elétrica Marília</span>. Todos os direitos reservados.</p>
+        <p>Av. Marília, 969 - Mariluz, PR | <a href="tel:+554499244787" style="color:var(--primary)">(44) 9924-4787</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/554499244787?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" class="whatsapp-float" aria-label="Fale pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Form → WhatsApp
+    function handleForm(e) {
+      e.preventDefault();
+      const nome     = document.getElementById('nome').value;
+      const telefone = document.getElementById('telefone').value;
+      const veiculo  = document.getElementById('veiculo').value;
+      const servico  = document.getElementById('servico').value;
+      const mensagem = document.getElementById('mensagem').value;
+
+      const text = `Olá! Vim pelo site da Auto Elétrica Marília.%0A%0A` +
+        `*Nome:* ${nome}%0A` +
+        `*Telefone:* ${telefone}%0A` +
+        `*Veículo:* ${veiculo || 'Não informado'}%0A` +
+        `*Serviço:* ${servico || 'Não informado'}%0A` +
+        `*Mensagem:* ${mensagem || 'Sem mensagem adicional'}`;
+
+      window.open(`https://wa.me/554499244787?text=${text}`, '_blank');
+    }
+
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .why-card, .hero-card, .prev-card, .benefit-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
